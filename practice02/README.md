@@ -42,4 +42,10 @@ redux devtools
 - 为什么要写无状态组件，因为比如继承 Component, 它里面有一些默认值，性能没有只有一个方法好
 
 #### 08
+redux-thunk
+- 这是一个中间件
+- 在 store 和 reducer 中间
+- reducer 是处理业务逻辑的
+- 但是 reducer 里面必须是纯函数
+- 有的时候用纯函数不能解决业务逻辑问题，这是后就用到 redux-thunk
 

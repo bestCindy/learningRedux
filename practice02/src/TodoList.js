@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import "antd/dist/antd.css";
 import store from "./store";//index 可以不写
-import { getTodoList, changeInputAction, addItemAction, deleteItemAction, getListAction } from "./store/actionCreator"
+// getTodoList getListAction
+import { getMyListAction, changeInputAction, addItemAction, deleteItemAction } from "./store/actionCreator"
 import TodoListUI from "./store/TodoListUI";
-import axios from "axios";
 
 class TodoList extends Component {
     constructor(props) {
@@ -43,10 +43,13 @@ class TodoList extends Component {
         store.dispatch(action);
     }
 
-    // componentDidMount() {
+    componentDidMount() {
     //    const action = getTodoList;
     //    store.dispatch(action);
-    // }
+
+        const action = getMyListAction();
+        store.dispatch(action);
+    }
 }
  
 export default TodoList;

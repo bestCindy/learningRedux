@@ -49,3 +49,8 @@ redux-thunk
 - 但是 reducer 里面必须是纯函数
 - 有的时候用纯函数不能解决业务逻辑问题，这是后就用到 redux-thunk
 
+#### 09
+redux-saga
+- 也是一个中间件，功能参考 redux-thunk
+
+

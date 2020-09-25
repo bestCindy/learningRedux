@@ -1,5 +1,6 @@
-import { CHANGE_INPUT, ADD_ITEM, DELETE_ITEM, GET_LIST } from "./actionTypes";
-import axios from "axios";
+import { CHANGE_INPUT, ADD_ITEM, DELETE_ITEM, GET_MY_LIST } from "./actionTypes";
+// import axios from "axios";
+// GET_LIST
 
 
 export const changeInputAction = (value) => ({
@@ -17,10 +18,10 @@ export const deleteItemAction = (value) => ({
     value
 });
 
-export const getListAction = (data) => ({
-    type: GET_LIST,
-    data
-})
+// export const getListAction = (data) => ({
+//     type: GET_LIST,
+//     data
+// });
 
 // export const getTodoList = () => {
 //     return (dispatch) => {
@@ -31,3 +32,7 @@ export const getListAction = (data) => ({
 //         }); 
 //     }
 // }
+
+export const getMyListAction = () => ({
+    type: GET_MY_LIST
+})
